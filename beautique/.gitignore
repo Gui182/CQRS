@@ -33,3 +33,5 @@ build/
 .vscode/
 
 infra/db-beautique/
+infra/rabbitmq-data/
+infra/rabbitmq-log/
