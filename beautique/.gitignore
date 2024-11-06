@@ -35,3 +35,4 @@ build/
 infra/db-beautique/
 infra/rabbitmq-data/
 infra/rabbitmq-log/
+infra/db-mongodb/
