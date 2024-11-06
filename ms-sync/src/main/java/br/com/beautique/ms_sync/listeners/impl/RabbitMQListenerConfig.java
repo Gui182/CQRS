@@ -20,7 +20,7 @@ public class RabbitMQListenerConfig implements ListenerConfig {
         this.objectMapper = objectMapper;
     }
 
-    @RabbitListener(queues = "customerQueue")
+    @RabbitListener(queues = "CustomerQueue")
     @Override
     public void listenToCustomerQueue(String message) {
         try {
