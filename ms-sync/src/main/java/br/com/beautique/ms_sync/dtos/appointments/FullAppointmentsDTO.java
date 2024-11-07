@@ -22,6 +22,6 @@ public class FullAppointmentsDTO {
     private LocalDateTime dateTime;
     private Boolean appointmentsOpen;
 
-    private CustomerDTO customerDTO;
-    private BeautyProceduresDTO beautyProceduresDTO;
+    private CustomerDTO customer;
+    private BeautyProceduresDTO beautyProcedure;
 }

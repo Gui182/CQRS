@@ -1,27 +1,26 @@
 #!/bin/bash
-
 set -e
 
 echo "Updating MongoDB users."
 
 mongosh --username mongoadmin --password mongopassword --authenticationDatabase admin <<EOF
 
-use ms-beautique-query
+use ms-beautique-query;
 
 db.dropUser("ms-beautique-query");
-db.dropUser("ms-sync")
+db.dropUser("ms-sync");
 
 db.createUser({
     user: 'ms-sync',
     pwd: 'ms-sync',
-    roles:  [{ role: 'dbOnwer', db: 'ms-beautique-query' }]
+    roles: [{ role: 'dbOwner', db: 'ms-beautique-query' }]
 });
 
 db.createUser({
     user: 'ms-beautique-query',
     pwd: 'ms-beautique-query',
-    roles: [{ role: 'read', db: 'ms-beautique-query' }]
-})
+    roles:[{ role: 'read', db: 'ms-beautique-query' }]
+});
 
 EOF
 
