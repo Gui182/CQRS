@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Document(collection = "beautyProcedures")
+@Document(collection = "beautyprocedures")
 public class BeautyProcedureDTO {
 
     private Long id;
